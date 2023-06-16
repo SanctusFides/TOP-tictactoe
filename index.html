@@ -10,6 +10,12 @@
 <body>
     <div class="content">
         
+        <span>
+            <!-- current placeholder for name input -->
+            <label for="player name">Enter your name</label>
+            <input type="text" name="player name" id="playerName">
+        </span>
+
         <div class="board" id="board">
     
             <span class="row" id="row1">
@@ -29,9 +35,10 @@
             </span>
         </div>
 
-
+        <div class="announcements">
+            <span id="annoucement"></span>
+        </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
