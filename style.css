@@ -11,7 +11,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    gap: 3rem;
+    gap: 2rem;
+}
+.content-hidden {
+    display: none;
 }
 
 .row {
@@ -26,4 +29,40 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 8rem;
+    
+}
+
+.pos-button-disabled {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8rem;
+    pointer-events:none;
+}
+
+.scoreboard {
+    display: flex;
+    gap: 4rem;
+    font-size: 2rem;
+}
+.scoreboard > span {
+    display: flex;
+    gap: 1rem;
+}
+
+.announcements {
+    color: darkred;
+    font-size: 2rem;
+}
+
+.reset-button > button {
+    font-size: 2rem;
+    background-color: rgb(26, 115, 232);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: .5rem 1rem .5rem 1rem;
 }

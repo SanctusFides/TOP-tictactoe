@@ -13,8 +13,12 @@
         <span class="top-section">
             <!-- current placeholder for name input -->
             <label for="player name">Enter your name</label>
-            <input type="text" name="player name" id="playerName">
+            <input type="text" name="player name" id="nameInput">
         </span>
+        
+        <div class="reset-button">
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
 
         <div class="board" id="board">
     
@@ -34,14 +38,24 @@
                 <div id="8" class="pos-button"> </div>
             </span>
         </div>
-
-        <div class="reset-button">
-            <button id="reset">Reset</button>
+        
+        <div class="scoreboard" style="display: none;">
+            <span>
+                <p id="playerName">You:</p>
+                <p id="playerScore">0</p>
+            </span>
+            <span>
+                <p>NPC:</p>
+                <p id="npcScore">0</p>
+            </span>
         </div>
 
         <div class="announcements">
             <span id="annoucement"></span>
         </div>
+        
+        
+
     </div>
     <script src="script.js" defer></script>
 </body>
