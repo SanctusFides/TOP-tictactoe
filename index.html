@@ -10,17 +10,16 @@
 <body>
     <div class="content">
         
-        <span class="top-section">
-            <!-- current placeholder for name input -->
-            <label for="player name">Enter your name</label>
-            <input type="text" name="player name" id="nameInput">
+        <span class="top-section" id="nameSection">
+            <input type="text" name="player name" id="nameInput" placeholder="Enter your name" required>
+            <button onclick="start()">Save</button>
         </span>
         
-        <div class="reset-button">
+        <div id="reset-button" class="reset-button-hidden">
             <button id="reset" onclick="reset()">Reset</button>
         </div>
 
-        <div class="board" id="board">
+        <div class="board-hidden" id="board">
     
             <span class="row" id="row1">
                 <div id="0" class="pos-button"> </div>
@@ -39,9 +38,9 @@
             </span>
         </div>
         
-        <div class="scoreboard" style="display: none;">
+        <div class="scoreboard-hidden" id="scoreBoard">
             <span>
-                <p id="playerName">You:</p>
+                <p id="playerName"></p>
                 <p id="playerScore">0</p>
             </span>
             <span>
